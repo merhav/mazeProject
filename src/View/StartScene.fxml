@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.StartSceneController">
+   <children>
+      <ImageView fx:id="imageViewBackground" fitHeight="400.0" fitWidth="407.0" layoutX="190.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="buttonStart" layoutX="134.0" layoutY="38.0" mnemonicParsing="false" onAction="#openViewScene" text="Start" />
+      <ImageView fx:id="imageViewSettings" fitHeight="150.0" fitWidth="200.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="buttonSave" layoutX="258.0" layoutY="300.0" mnemonicParsing="false" onAction="#openViewScene" text="Save" />
+   </children>
+</AnchorPane>

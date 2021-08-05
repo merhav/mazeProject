@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.SettingsSceneController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Settings">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="67.0" text="Generating Algorithm:">
+         <effect>
+            <Lighting diffuseConstant="1.4">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="RadioButtonBestAlgorithm" layoutX="14.0" layoutY="95.0" mnemonicParsing="false" text="Best Generator" />
+      <RadioButton fx:id="RadioButtonSimpleAlgorithm" layoutX="14.0" layoutY="119.0" mnemonicParsing="false" text="Simple Generator" />
+      <Label layoutX="14.0" layoutY="175.0" text="Solving Algorithm" />
+      <RadioButton fx:id="RadioButtonBreadthFirdtSearch" layoutX="14.0" layoutY="205.0" mnemonicParsing="false" text="Breath First Search" />
+      <RadioButton fx:id="RadioButtonDepthFirstSearch" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" text="Depth First Search" />
+      <RadioButton fx:id="RadioButtonBestFirstSearch" layoutX="14.0" layoutY="265.0" mnemonicParsing="false" text="Best Fisrt Search" />
+      <Label layoutX="17.0" layoutY="300.0" text="Amount Of Threads" />
+      <TextField fx:id="textFiledNumOfThreads" layoutX="157.0" layoutY="295.0" prefHeight="31.0" prefWidth="119.0" promptText="Enter Number" />
+      <Button fx:id="buttonSaveSettings" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#saveSettingsClicked" text="Save" />
+      <Button layoutX="91.0" layoutY="335.0" mnemonicParsing="false" onAction="#CancelSettingsClicked" text="Cancel" />
+      <ImageView fx:id="settings" fitHeight="150.0" fitWidth="200.0" layoutX="343.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+
+      </ImageView>
+   </children>
+</AnchorPane>
